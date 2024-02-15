@@ -1,0 +1,80 @@
+/* Body */
+body {
+    background-color: #1f1f1f; /* Dark background */
+    color: #ffffff; /* Light text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: #000000; /* Black header */
+    padding: 20px;
+}
+
+h1 {
+    color: #b8860b; /* Brownish gold heading */
+}
+
+/* Audio Player */
+audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Controls */
+button {
+    background-color: #b8860b; /* Brownish gold buttons */
+    color: #1f1f1f; /* Dark text */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #b8860b; /* Darken on hover */
+    opacity: 0.8;
+}
+
+button:disabled {
+    background-color: #999999; /* Disabled buttons */
+    cursor: not-allowed;
+}
+
+/* Progress Bar */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #333333; /* Dark progress bar */
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #b8860b; /* Brownish gold thumb */
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Playlist */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #333333;
+}
+
+/* Footer */
+footer {
+    background-color: #000000; /* Black footer */
+    color: #ffffff; /* Light text */
+    padding: 20px;
+}
