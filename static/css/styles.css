@@ -78,3 +78,11 @@ footer {
     color: #ffffff; /* Light text */
     padding: 20px;
 }
+
+#audioPlayer {
+    display: none;
+}
+
+#progressBar {
+    width: 100%;
+}

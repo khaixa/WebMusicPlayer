@@ -5,6 +5,8 @@
         h1 {text-align: center;}
         p {text-align: center;}
         div {text-align: center;}
+        img { width: 100px; height: auto; display: block; margin: 0 auto; }
+        .centered { display: block; margin: 0 auto; }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,15 +16,15 @@
     <script defer src="static/script.js"></script>
 </head>
 <body>
+    <img src="static/img/mainlogo.jpg" alt="logo">
     <h1>Jodeci Station</h1>
     <audio id="audioPlayer" controls>
         <source src="{{ url_for('static', filename='music/cryforyou.mp3') }}" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-    <button onclick="play()">Play</button>
-    <button onclick="pause()">Pause</button>
-    <button onclick="stop()">Stop</button>
+    <input type="range" id="progressBar" value="0" step="1" style="width: 100%;">
+    <button id="playPauseButton" onclick="playPause()" class="centered">Play</button>
+    <button onclick="stop()" class="centered">Stop</button>
     
-
 </body>
 </html>

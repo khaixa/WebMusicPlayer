@@ -2,17 +2,19 @@
 //Web Music Player
 const btnEl = document.querySelector('.btn')
 
-function play(){
-    console.log()
+function playPause() {
     var audio = document.getElementById("audioPlayer");
-    audio.play();
+    var button = document.getElementById("playPauseButton");
+    
+    if (audio.paused) {
+        audio.play();
+        button.innerHTML = "Pause";
+    } else {
+        audio.pause();
+        button.innerHTML = "Play";
+    }
 }
 
-function pause(){
-    console.log()
-    var audio = document.getElementById("audioPlayer");
-    audio.pause();
-}
 
 function stop(){
     console.log()
@@ -20,6 +22,11 @@ function stop(){
     audio.pause();
     audio.currentTime = 0;
 }
+
+//document.addEventListener("DOMContentLoaded", function () {
+//    var progressBar = document.getElementById("progressBar");
+
+//}
 
 btnEl.addEventListener('click', play)
 btnEl.addEventListener('click', pause)
